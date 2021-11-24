@@ -1,0 +1,44 @@
+#include <iostream> 
+using namespace std;
+
+int main()
+{
+    setlocale(0, "");
+
+    int oper,
+          a,
+          b;
+    cout << "Выберите операцию: \n[1] + \n[2] - \n[3] * \n[4] / \n[5] % \n";
+    cin >> operation;
+    cout << "Введите  целое число #1 ";
+    cin >> a;
+    cout << "\nВведите целое число #2 ";
+    cin >> b;
+
+    if (oper == 1)
+    {
+        cout << "\n" << a << " + " << b << " = " << a + b;
+    }
+    else if (oper == 2)
+    {
+        cout << "\n" << a << " - " << b << " = " << a - b;
+    }
+    else if (oper == 3)
+    {
+        cout << "\n" << a << " * " << b << " = " << a * b;
+    }
+    else if (oper == 4)
+    {
+        cout << "\n" << a << " / " << b << " = " << a / b;
+    }
+    else if (oper == 5)
+    {
+        cout << "\n" << a << " % " << b << " = " << a % b;
+    }
+    else
+    {
+        cout << "\nШо Ошибка";
+    }
+
+    return 0;
+}
